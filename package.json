@@ -3,8 +3,20 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --hot run index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "level": "^8.0.0",
+    "tweetnacl": "^1.0.3",
+    "bs58": "^5.0.0",
+    "elysia": "^1.0.0"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/level": "^6.0.2"
   },
   "peerDependencies": {
     "typescript": "^5"
